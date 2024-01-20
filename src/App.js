@@ -2,10 +2,24 @@ import './App.css';
 import WalletCard from './components/WalletCard/WalletCard';
 import Button from './components/button/button';
 
+import userIMG from "./assets/pexels-tatiana-11440206.jpg"
+import settingsIcon from "./assets/settings-svgrepo-com.svg"
+
 function App() {
   return (
     <div className="App">
-      <section id='header'>
+      <section>
+        <div id='header'>
+          <img src={userIMG} id='userIMG'/>
+          <img src={settingsIcon} id='userSettings'/>
+        </div>
+        <div id='headertext'>
+          <div className='texthead'>
+          <span>Your new away,</span><br/>
+          <span>to control your finances!</span>
+          <hr/>
+          </div>
+        </div>
       </section>
 
       <section id='buttons'>
