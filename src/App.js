@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import WalletCard from './components/WalletCard/WalletCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WalletCard title="New Macbook" money="100"/>
+      <WalletCard title="Vacation" money="300"/>
     </div>
+    
   );
 }
 
